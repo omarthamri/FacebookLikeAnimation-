@@ -65,7 +65,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         if gesture.state == .began {
             handleGestureBegan(gesture: gesture)
         } else if gesture.state == .ended {
-            /*UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                 let stackView = self.iconContainerView.subviews.first
                 stackView?.subviews.forEach({ (image)  in
                     if image.frame.origin.y != 6
@@ -80,7 +80,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
                 
             },completion: { (_) in
                 self.iconContainerView.removeFromSuperview()
-            })*/
+            })
             
         } else if gesture.state == .changed {
             handleGestureChanges(gesture: gesture)
@@ -92,10 +92,10 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         let hitTestView = iconContainerView.hitTest(gesture.location(in: iconContainerView), with: nil)
         if hitTestView is UIImageView {
             UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                /*let stackView = self.iconContainerView.subviews.first
+                let stackView = self.iconContainerView.subviews.first
                 stackView?.subviews.forEach({ (image)  in
                     image.transform = .identity
-                })*/
+                })
                 hitTestView?.transform = CGAffineTransform(translationX: 0, y: -10)
             })
         }
