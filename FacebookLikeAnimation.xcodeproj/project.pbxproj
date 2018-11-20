@@ -15,6 +15,7 @@
 		76B0390F21A1E4CA0071DFFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B0390D21A1E4CA0071DFFF /* LaunchScreen.storyboard */; };
 		76B0391A21A1E4CB0071DFFF /* FacebookLikeAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B0391921A1E4CB0071DFFF /* FacebookLikeAnimationTests.swift */; };
 		76B0392521A1E4CB0071DFFF /* FacebookLikeAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B0392421A1E4CB0071DFFF /* FacebookLikeAnimationUITests.swift */; };
+		76FEB50021A49DEF0048B316 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEB4FF21A49DEF0048B316 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		76B0392021A1E4CB0071DFFF /* FacebookLikeAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookLikeAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B0392421A1E4CB0071DFFF /* FacebookLikeAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLikeAnimationUITests.swift; sourceTree = "<group>"; };
 		76B0392621A1E4CB0071DFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FEB4FF21A49DEF0048B316 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		76B0390021A1E4CA0071DFFF /* FacebookLikeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				76FEB4FE21A49DCB0048B316 /* Extensions */,
+				76FEB4FD21A49DB90048B316 /* Views */,
+				76FEB4FC21A49DA20048B316 /* Controllers */,
 				76B0390121A1E4CA0071DFFF /* AppDelegate.swift */,
-				76B0390321A1E4CA0071DFFF /* ViewController.swift */,
-				76B0390521A1E4CA0071DFFF /* Main.storyboard */,
 				76B0390B21A1E4CA0071DFFF /* Assets.xcassets */,
 				76B0390D21A1E4CA0071DFFF /* LaunchScreen.storyboard */,
 				76B0391021A1E4CA0071DFFF /* Info.plist */,
@@ -126,6 +129,30 @@
 				76B0392621A1E4CB0071DFFF /* Info.plist */,
 			);
 			path = FacebookLikeAnimationUITests;
+			sourceTree = "<group>";
+		};
+		76FEB4FC21A49DA20048B316 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76B0390321A1E4CA0071DFFF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		76FEB4FD21A49DB90048B316 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76B0390521A1E4CA0071DFFF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76FEB4FE21A49DCB0048B316 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76FEB4FF21A49DEF0048B316 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +292,7 @@
 				76B0390421A1E4CA0071DFFF /* ViewController.swift in Sources */,
 				76B0390A21A1E4CA0071DFFF /* FacebookLikeAnimation.xcdatamodeld in Sources */,
 				76B0390221A1E4CA0071DFFF /* AppDelegate.swift in Sources */,
+				76FEB50021A49DEF0048B316 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
